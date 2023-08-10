@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_screen_main_layout_padding"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/inkscape"
+        app:layout_constraintBottom_toTopOf="@+id/flStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/flStart"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/item_color_accent_border_ripple_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myImageView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="START!"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_button_text_size"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/flBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flStart">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="12 YOGA EXERCISES FOR JOINT PAIN!!"
+            android:textSize="10dp"/>
+
+
+        <Button
+            android:id="@+id/btnBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint ="@color/colorAccent"
+            android:text="BMI CALCULATOR"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_button_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BMI(Body to Mass Index) CHECK"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint ="@color/colorAccent"
+            android:text="VIEW HISTORY"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_button_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Yoga workout History"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp"
+     tools:context=".FinishActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_finish_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONGRATULATIONS!!"
+        android:textSize="20dp"
+        android:background="@color/purple_200"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU'VE FINISHED THE YOGA WORKOUT"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:paddingTop="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/end_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/well_done"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        >
+
+    </ImageView>
+
+
+
+
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="RESTART THE WORKOUT"
+        android:textSize="20dp"
+        android:background="@color/colorAccent"
+        android:textStyle="italic"
+        />
+
+</LinearLayout>
